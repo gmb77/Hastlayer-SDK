@@ -10,7 +10,7 @@
     </Compile>
   </ItemGroup>
   <PropertyGroup Condition="$(SolutionName) == 'Hastlayer.SDK' or $(SolutionName) == 'Hastlayer.SDK.Linux'">
-    <DefineConstants>WITH_HAST_CORE</DefineConstants>
+    <!--DefineConstants>WITH_HAST_CORE</DefineConstants-->
   </PropertyGroup>
   <ItemGroup Condition="$(DefineConstants.Contains(WITH_HAST_CORE))">
     <ProjectReference Include="..\Hast.Core\Hast.Catapult\Hast.Catapult.csproj" />
